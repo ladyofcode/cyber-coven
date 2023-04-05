@@ -1,0 +1,375 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/*
+    Custom styles
+*/
+
+body {
+    background-color: #1B1228;
+    color: #ffffff;
+    overflow-x: hidden;
+
+}
+
+h1,
+h2 {
+    font-size: 1.6em;
+}
+
+h1,
+h2 {
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+a,
+h3,
+h4 {
+    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
+    color: #99C0CC;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    margin-bottom: 0.8rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+header svg {
+    margin: 0 auto;
+    /* width: 474px;
+    height: 304px;
+    right: -100px; */
+}
+
+/* .circle-b4 {
+    position: absolute;
+    border-radius: 50%;
+    display: block;
+    background-color: #e39bffac;
+}
+
+.circle-b4 {
+    height: 8px;
+    width: 8px;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0 0 2px 2px #e8a9ffa3;
+    offset-path: path("M891 667.5C870.167 648.167 835.545 617.5 823 606C810.455 594.5 808 591 808 578.5C808 570.5 807.833 560.5 808 554");
+    animation: glow 1s ease-in infinite;
+    animation-delay: 0.9s; 
+} */
+
+footer {
+    width: 100%;
+    padding: 1.6rem;
+    background: #0d0617;
+    text-align: center;
+}
+
+section {
+    max-width: 1024px;
+}
+
+#intro, #about, #values, #join, #regulars {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+#intro, #about, #values, footer {
+    margin-top: 8rem;
+}
+
+#intro, #about, #values, #join, #regulars {
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+}
+
+#join {
+    flex-direction: column-reverse;
+}
+
+#join div:first-child {
+    margin-top: 8rem;
+}
+
+section svg {
+    width: 100%;
+    height: 100%;
+}
+
+#regulars {
+    padding-top: 2.4rem;
+    text-align: center;
+    background-color: #2e223b;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 8rem;
+}
+
+#card-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#card-container a {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    max-width: 180px;
+    height: 100%;
+}
+
+#card-container a div{
+    width: 100%;
+    padding: 2.4rem 1.6rem;
+}
+
+#card-container svg {
+    height: 16px;
+    width: 16px;
+    fill: #99C0CC;
+    display: inline-block;
+}
+
+#card-container img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+#card-container h3 {
+    margin-top: 1.6rem;
+}
+
+.svg-container {
+    position: relative;
+}
+
+.svg-container {
+    flex-grow: 0;
+	flex-shrink: 0;
+}
+
+#circle-thin-container {
+    width: 474px;
+    height: 304px;
+    right: -100px;
+}
+
+#circle-thick-container {
+    width: 457px;
+    height: 313px;
+    left: -200px;
+}
+
+#circle-dual-container {
+    width: 479px;
+    height: 417px;
+    top: 0;
+    right: 0;
+}
+
+.circle-thin,
+.circle-thick,
+.circle-dual-thin,
+.circle-dual-thick {
+    position: absolute;
+    border-radius: 50%;
+    display: block;
+    background-color: #e39bffac;
+}
+
+.circle-thin {
+    height: 8px;
+    width: 8px;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0 0 2px 2px #e8a9ffa3;
+    offset-path: path("M473.5 9.49991L219 264H34");
+    animation: glow 1s ease-in infinite;
+    animation-delay: 0.9s;
+}
+
+.circle-thick {
+    height: 16px;
+    width: 16px;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0 0 2px 2px #e8a9ffa3;
+    offset-path: path("M1 57.0003L212.5 268.5H415.5");
+    animation: glow 1s ease-in infinite;
+    animation-delay: 0.9s;
+}
+
+.circle-dual-thin {
+    height: 8px;
+    width: 8px;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0 0 2px 2px #e8a9ffa3;
+    offset-path: path("M473.5 8.98523L219 263.485H34");
+    animation: glow 1s ease-in infinite;
+    animation-delay: 0.9s;
+}
+
+.circle-dual-thick {
+    height: 8px;
+    width: 8px;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0 0 2px 2px #e8a9ffa3;
+    offset-path: path("M473 159.5L261.5 371H58.5");
+    animation: glow 1s ease-in infinite;
+    animation-delay: 0.9s;
+
+}
+
+@keyframes glow {
+
+    0% {
+        background-color: #e39bffac;
+        box-shadow: 0 0 4px 2px #dac3ffcd, 0 0 8px 1px #e8a9ff7e;
+        transform: scale(1);
+    }
+
+    5% {
+        background-color: #e39bff3e;
+        box-shadow: 0 0 6px 6px #e8a9ff6a;
+        transform: scale(2);
+    }
+
+    20% {
+        background-color: #e39bffac;
+        transform: scale(1);
+        box-shadow: 0 0 2px 2px #e8a9ffa3;
+    }
+
+}
+
+@media (min-width: 500px) {
+    #circle-thin-container {
+        right: -200px;
+    }
+
+    #circle-thick-container {
+        left: -100px;
+    }
+
+    #circle-dual-container {
+        right: -200px;
+    }
+}
+
+@media (min-width: 800px) {
+
+    #circle-thin-container {
+        right: 0;
+    }
+
+    #circle-thick-container {
+        left: 0;
+    }
+
+    #circle-dual-container {
+        right: 0;
+    }
+
+    section {
+        margin: 0 auto;
+        padding: 8rem 0;
+        width: 100%;
+    }
+
+    #card-container {
+        flex-direction: row;
+    }
+
+    #intro, #about, #values, #join {
+        margin: 0 auto;
+    }
+
+    #intro, #about, #join {
+        flex-direction: row;
+    }
+
+    #join div:first-child {
+        padding-right: 4rem;
+    }
+
+    #about {
+        flex-direction: row-reverse;
+    }
+
+    #circle-dual-container {
+        right: 0;
+    }
+}
