@@ -41,9 +41,6 @@ header {
 
 header svg {
     margin: 0 auto;
-    /* width: 474px;
-    height: 304px;
-    right: -100px; */
 }
 
 footer {
@@ -289,21 +286,17 @@ section svg {
 }
 
 @media (min-width: 800px) {
+
     #regulars {
         margin: 0 auto;
     }
-    
 
     #circle-thin-container {
         right: 0;
     }
 
-    #circle-thick-container {
-        left: 0;
-    }
-
     #circle-dual-container {
-        right: 0;
+        right: -100px;
     }
 
     section {
@@ -329,15 +322,8 @@ section svg {
         flex-direction: row;
     }
 
-    #join div:first-child {
-        padding-right: 4rem;
-    }
-
     #about {
         flex-direction: row-reverse;
     }
 
-    #circle-dual-container {
-        right: 0;
-    }
 }
