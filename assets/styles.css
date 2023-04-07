@@ -1,59 +1,4 @@
 /*
-  Josh's Custom CSS Reset
-  https://www.joshwcomeau.com/css/custom-css-reset/
-*/
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-* {
-    margin: 0;
-}
-
-html,
-body {
-    height: 100%;
-}
-
-body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-    display: block;
-    max-width: 100%;
-}
-
-input,
-button,
-textarea,
-select {
-    font: inherit;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    overflow-wrap: break-word;
-}
-
-#root,
-#__next {
-    isolation: isolate;
-}
-
-/*
     Custom styles
 */
 
@@ -67,11 +12,8 @@ body {
 h1,
 h2 {
     font-size: 1.6em;
-}
-
-h1,
-h2 {
     font-family: 'Cinzel Decorative', cursive;
+    margin-bottom: 0.8rem;
 }
 
 a,
@@ -94,6 +36,7 @@ header {
     justify-content: center;
     width: 100%;
     height: 100vh;
+    padding: 0 1.6rem;
 }
 
 header svg {
@@ -102,24 +45,6 @@ header svg {
     height: 304px;
     right: -100px; */
 }
-
-/* .circle-b4 {
-    position: absolute;
-    border-radius: 50%;
-    display: block;
-    background-color: #e39bffac;
-}
-
-.circle-b4 {
-    height: 8px;
-    width: 8px;
-    top: 0px;
-    left: 0px;
-    box-shadow: 0 0 2px 2px #e8a9ffa3;
-    offset-path: path("M891 667.5C870.167 648.167 835.545 617.5 823 606C810.455 594.5 808 591 808 578.5C808 570.5 807.833 560.5 808 554");
-    animation: glow 1s ease-in infinite;
-    animation-delay: 0.9s; 
-} */
 
 footer {
     width: 100%;
@@ -132,17 +57,28 @@ section {
     max-width: 1024px;
 }
 
-#intro, #about, #values, #join, #regulars {
+#intro,
+#about,
+#values,
+#join,
+#regulars {
     max-width: 800px;
     display: flex;
     flex-direction: column;
 }
 
-#intro, #about, #values, footer {
+#intro,
+#about,
+#values,
+footer {
     margin-top: 8rem;
 }
 
-#intro, #about, #values, #join, #regulars {
+#intro,
+#about,
+#values,
+#join,
+#regulars {
     margin-left: 2.4rem;
     margin-right: 2.4rem;
 }
@@ -161,16 +97,16 @@ section svg {
 }
 
 #regulars {
-    padding-top: 2.4rem;
+    padding: 4rem 1.6rem;
     text-align: center;
     background-color: #2e223b;
     border-radius: 8px;
-    margin: 0 auto;
-    margin-top: 8rem;
+    margin: 8rem 1.6rem 0 1.6rem;
 }
 
 #card-container {
     display: flex;
+    padding: 0 0.8rem;
     width: 100%;
     height: 100%;
     align-items: center;
@@ -187,7 +123,7 @@ section svg {
     height: 100%;
 }
 
-#card-container a div{
+#card-container a div {
     width: 100%;
     padding: 2.4rem 1.6rem;
 }
@@ -212,12 +148,34 @@ section svg {
 
 .svg-container {
     position: relative;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
-.svg-container {
-    flex-grow: 0;
-	flex-shrink: 0;
+#text {
+    transform-origin:center;
+    transform: scale(0.8);
+    animation: textGlow 1.5s infinite alternate;
 }
+
+@keyframes textGlow {
+    0% {
+      filter: 
+      drop-shadow(0px 0px 1px #c19ce9)
+      drop-shadow(0px 0px 3px #8f69b9)
+      drop-shadow(0px 0px 5px #5b286b)
+      drop-shadow(0px 0px 7px #4b1e69)
+      drop-shadow(0px 0px 4px #520063);
+    }
+  
+    100% {
+      filter: drop-shadow(0px 0px 2px #c19ce9)
+      drop-shadow(0px 0px 4px #8f69b9)
+      drop-shadow(0px 0px 6px #5b286b)
+      drop-shadow(0px 0px 8px #4b1e69)
+      drop-shadow(0px 0px 10px #520063); 
+    }
+  }
 
 #circle-thin-container {
     width: 474px;
@@ -290,12 +248,12 @@ section svg {
     offset-path: path("M473 159.5L261.5 371H58.5");
     animation: glow 1s ease-in infinite;
     animation-delay: 0.9s;
-
 }
 
 @keyframes glow {
 
     0% {
+
         background-color: #e39bffac;
         box-shadow: 0 0 4px 2px #dac3ffcd, 0 0 8px 1px #e8a9ff7e;
         transform: scale(1);
@@ -316,6 +274,7 @@ section svg {
 }
 
 @media (min-width: 500px) {
+
     #circle-thin-container {
         right: -200px;
     }
@@ -330,6 +289,10 @@ section svg {
 }
 
 @media (min-width: 800px) {
+    #regulars {
+        margin: 0 auto;
+    }
+    
 
     #circle-thin-container {
         right: 0;
@@ -353,11 +316,16 @@ section svg {
         flex-direction: row;
     }
 
-    #intro, #about, #values, #join {
+    #intro,
+    #about,
+    #values,
+    #join {
         margin: 0 auto;
     }
 
-    #intro, #about, #join {
+    #intro,
+    #about,
+    #join {
         flex-direction: row;
     }
 

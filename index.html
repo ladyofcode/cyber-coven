@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cyber Coven website</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./assets/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Poppins:wght@300&display=swap"
@@ -123,46 +124,135 @@
                     </g>
                     <path id="star-b"
                         d="M426.5 737L422.713 715.712L401 712L422.713 708.288L426.5 687L430.287 708.288L452 712L430.287 715.712L426.5 737Z"
-                        fill="#A876A9" fill-opacity="0.5" />
+                        fill="#A876A9" opacity="0">
+                        <animate id="sbg" attributeType="CSS" attributeName="opacity" values="0;0;0;0;1;0.5;0.1;0"
+                            dur="2s" begin="0s;sbg.end+2s;" />
+                    </path>
                     <path id="star-tr"
                         d="M1002.5 219L997.526 190.9L969 186L997.526 181.1L1002.5 153L1007.47 181.1L1036 186L1007.47 190.9L1002.5 219Z"
-                        fill="#99C0CC" fill-opacity="0.5" />
+                        fill="#99C0CC" opacity="0">
+                        <animate id="strg" attributeType="CSS" attributeName="opacity" values="0;0;0;0;1;0.5;0.1;0"
+                            dur="2s" begin="0s;strg.end+3s;" />
+                    </path>
                     <path id="star-tl"
                         d="M226.5 87L222.862 66.5638L202 63L222.862 59.4362L226.5 39L230.138 59.4362L251 63L230.138 66.5638L226.5 87Z"
-                        fill="#99C0CC" fill-opacity="0.5" />
-                    <path id="b4"
-                        d="M891 667.5C870.167 648.167 835.545 617.5 823 606C810.455 594.5 808 591 808 578.5C808 570.5 807.833 560.5 808 554"
-                        />
-                    <circle class="cb4" cx="808" cy="554" r="6" fill="#D9D9D9">
-                        <animateMotion dur="1s" repeatCount="indefinite" begin="indefinite" fill="freeze" keyPoints="1;0" keyTimes="0;1" path="M891 667.5C870.167 648.167 835.545 617.5 823 606C810.455 594.5 808 591 808 578.5C808 570.5 807.833 560.5 808 554" />
+                        fill="#99C0CC" opacity="0">
+                        <animate id="stlg" attributeType="CSS" attributeName="opacity" values="0;0;0;0;1;0.5;0.1;0"
+                            dur="2s" begin="0s;stlg.end+4s;" />
+                    </path>
+
+                    <circle id="cb4" cx="" cy="" r="6" fill="#774689" opacity="0">
+                        <animateMotion id="cb4a" dur="1s" begin="0;cb4a.end+3.5s" calcMode="spline" keyPoints="1;0"
+                            keyTimes="0;1" keySplines=".42,0,1,1"
+                            path="M891 667.5C870.167 648.167 835.545 617.5 823 606C810.455 594.5 808 591 808 578.5C808 570.5 807.833 560.5 808 554"
+                            fill="freeze" />
+                        <animate id="cb4o" attributeType="CSS" attributeName="opacity" values="0;1;1;1;1;1;1;1" dur="1s"
+                            begin="0s;cb4o.end+3.5s;" />
                     </circle>
-                    <path id="b3"
-                        d="M758.5 726.5C737 706.833 697.5 670 689 663C681.904 657.156 675.5 651.5 675.5 633C675.5 624.6 675.5 576.5 675.5 553.5"
-                        stroke="white" />
-                    <circle class="cb3" cx="676" cy="553" r="6" fill="#D9D9D9" />
-                    <path id="b2" d="M550 663V553" stroke="white" />
-                    <circle class="cb2" cx="550" cy="553" r="6" fill="#D9D9D9" />
-                    <path id="b1"
-                        d="M333.5 629.5C349.833 619 385.553 599.973 392.5 596.5C402.5 591.5 415.5 585 417 576.5C417.556 573.349 418 558.167 418 553"
-                        stroke="white" />
-                    <circle class="cb1" cx="418" cy="554" r="6" fill="#D9D9D9" />
-                    <path id="t5"
-                        d="M889 138C868.667 149.5 826.9 173.1 822.5 175.5C817 178.5 805 184.5 804.5 194.5C804.1 202.5 804.333 221.833 804.5 230.5"
-                        stroke="white" />
-                    <circle class="ct5" cx="804" cy="230" r="6" fill="#D9D9D9" />
-                    <path id="t4" d="M672.5 99.5L671.5 230.5" stroke="white" />
-                    <circle class="ct4" cx="672" cy="230" r="6" fill="#D9D9D9" />
-                    <path id="t3"
-                        d="M463.5 29.5C484.333 47.8333 528 88.9 536 96.5C546 106 546.5 107.5 546.5 119C546.5 124.2 546.5 195.5 546.5 230.5"
-                        stroke="white" />
-                    <circle class="ct3" cx="546" cy="230" r="6" fill="#D9D9D9" />
-                    <path id="t2"
-                        d="M331.5 116C353.833 135.333 398.5 177 403.5 181.5C410.075 187.418 415 191.5 415 200C415 204 415 222 415 230.5"
-                        stroke="white" />
-                    <circle class="ct2" cx="415" cy="230" r="6" fill="#D9D9D9" />
-                    <path id="t1" d="M232 196C238.667 211.833 254.761 244.641 259 251C265 260 269.5 265 279 265H338"
-                        stroke="white" />
-                    <circle class="ct1" cx="338" cy="265" r="6" fill="#D9D9D9" />
+                    <circle id="cb4-glow" cx="891" cy="668" r="18" fill="url(#paint0_radial_167_141)" opacity="0">
+                        <animate id="cb4g" attributeType="CSS" attributeName="opacity" values="0;0;0;0;1;0.5;0.1;0"
+                            dur="2s" begin="0s;cb4g.end+2.5s;" />
+                    </circle>
+
+                    <circle id="cb3" cx="" cy="" r="6" fill="#774689" opacity="0">
+                        <animateMotion id="cb3a" dur="1s" begin="0;cb3a.end+3s" calcMode="spline" keyPoints="1;0"
+                            keyTimes="0;1" keySplines=".42,0,1,1"
+                            path="M758.5 726.5C737 706.833 697.5 670 689 663C681.904 657.156 675.5 651.5 675.5 633C675.5 624.6 675.5 576.5 675.5 553.5"
+                            fill="freeze" />
+                        <animate id="cb3o" attributeType="CSS" attributeName="opacity" values="0;1;1;1;1;1;1;1" dur="1s"
+                            begin="0s;cb3o.end+3s;" />
+                    </circle>
+                    <circle id="cb3-glow" cx="759" cy="727" r="18" fill="url(#paint1_radial_167_141)" opacity="0">
+                        <animate id="cb3g" attributeType="CSS" attributeName="opacity" values="0;0;0;0;1;0.5;0.1;0"
+                            dur="2s" begin="0s;cb3g.end+2s;" />
+                    </circle>
+
+                    <circle id="cb2" cx="" cy="" r="6" fill="#774689" opacity="0">
+                        <animateMotion id="cb2a" dur="1s" begin="0;cb2a.end+4.5s" calcMode="spline" keyPoints="1;0"
+                            keyTimes="0;1" keySplines=".42,0,1,1" path="M550 663V553" fill="freeze" />
+                        <animate id="cb2o" attributeType="CSS" attributeName="opacity" values="0;1;1;1;1;1;1;1" dur="1s"
+                            begin="0s;cb2o.end+4.5s;" />
+                    </circle>
+                    <circle id="cb2-glow" cx="550" cy="663" r="18" fill="url(#paint2_radial_167_141)" opacity="0">
+                        <animate id="cb2g" attributeType="CSS" attributeName="opacity" values="0;0;0;0;1;0.5;0.1;0"
+                            dur="2s" begin="0s;cb2g.end+3.5s;" />
+                    </circle>
+
+                    <circle id="cb1" cx="" cy="" r="6" fill="#774689" opacity="0">
+                        <animateMotion id="cb1a" dur="1s" begin="0;cb1a.end+1.5s" calcMode="spline" keyPoints="1;0"
+                            keyTimes="0;1" keySplines=".42,0,1,1"
+                            path="M333 631.5C349.333 621 385.553 599.973 392.5 596.5C402.5 591.5 415.5 585 417 576.5C417.556 573.349 418 558.167 418 553"
+                            fill="freeze" />
+                        <animate id="cb1o" attributeType="CSS" attributeName="opacity" values="0;1;1;1;1;1;1;1" dur="1s"
+                            begin="0s;cb1o.end+1.5s;" />
+                    </circle>
+                    <circle id="cb1-glow" cx="333" cy="632" r="18" fill="url(#paint3_radial_167_141)" opacity="0">
+                        <animate id="cb1g" attributeType="CSS" attributeName="opacity" values="0;0;0;0;1;0.5;0.1;0"
+                            dur="2s" begin="0s;cb1g.end+0.5s;" />
+                    </circle>
+
+                    <circle id="ct5" cx="" cy="" r="6" fill="#774689" opacity="0">
+                        <animateMotion id="ct5a" dur="1s" begin="0;ct5a.end+4.5s" calcMode="spline" keyPoints="1;0"
+                            keyTimes="0;1" keySplines=".42,0,1,1"
+                            path="M889 138C868.667 149.5 826.9 173.1 822.5 175.5C817 178.5 805 184.5 804.5 194.5C804.1 202.5 804.333 221.833 804.5 230.5"
+                            fill="freeze" />
+                        <animate id="ct5o" attributeType="CSS" attributeName="opacity" values="0;1;1;1;1;1;1;1" dur="1s"
+                            begin="0s;ct5o.end+4.5s;" />
+                    </circle>
+                    <circle id="ct5-glow" cx="888" cy="138" r="18" fill="url(#paint4_radial_167_141)" opacity="0">
+                        <animate id="ct5g" attributeType="CSS" attributeName="opacity" values="0;0;0;0;1;0.5;0.1;0"
+                            dur="2s" begin="0s;ct5g.end+3.5s;" />
+                    </circle>
+
+                    <circle id="ct4" cx="" cy="" r="6" fill="#774689" opacity="0">
+                        <animateMotion id="ct4a" dur="1s" begin="0;ct4a.end+6s" calcMode="spline" keyPoints="1;0"
+                            keyTimes="0;1" keySplines=".42,0,1,1" path="M672.5 99.5L671.5 230.5" fill="freeze" />
+                        <animate id="ct4o" attributeType="CSS" attributeName="opacity" values="0;1;1;1;1;1;1;1" dur="1s"
+                            begin="0s;ct4o.end+6s;" />
+                    </circle>
+                    <circle id="ct4-glow" cx="672" cy="99" r="18" fill="url(#paint5_radial_167_141)" opacity="0">
+                        <animate id="ct4g" attributeType="CSS" attributeName="opacity" values="0;0;0;0;1;0.5;0.1;0"
+                            dur="2s" begin="0s;ct4g.end+5s;" />
+                    </circle>
+
+                    <circle id="ct3" cx="" cy="" r="6" fill="#774689" opacity="0">
+                        <animateMotion id="ct3a" dur="1s" begin="0;ct3a.end+5s" calcMode="spline" keyPoints="1;0"
+                            keyTimes="0;1" keySplines=".42,0,1,1"
+                            path="M463.5 29.5C484.333 47.8333 528 88.9 536 96.5C546 106 546.5 107.5 546.5 119C546.5 124.2 546.5 195.5 546.5 230.5"
+                            fill="freeze" />
+                        <animate id="ct3o" attributeType="CSS" attributeName="opacity" values="0;1;1;1;1;1;1;1" dur="1s"
+                            begin="0s;ct3o.end+5s;" />
+                    </circle>
+                    <circle id="ct3-glow" cx="462" cy="28" r="18" fill="url(#paint6_radial_167_141)" opacity="0">
+                        <animate id="ct3g" attributeType="CSS" attributeName="opacity" values="0;0;0;0;1;0.5;0.1;0"
+                            dur="2s" begin="0s;ct3g.end+4;" />
+                    </circle>
+
+                    <circle id="ct2" cx="" cy="" r="6" fill="#774689" opacity="0">
+                        <animateMotion id="ct2a" dur="1s" begin="0;ct2a.end+2.5s" calcMode="spline" keyPoints="1;0"
+                            keyTimes="0;1" keySplines=".42,0,1,1"
+                            path="M331.5 116C353.833 135.333 398.5 177 403.5 181.5C410.075 187.418 415 191.5 415 200C415 204 415 222 415 230.5"
+                            fill="freeze" />
+                        <animate id="ct2o" attributeType="CSS" attributeName="opacity" values="0;1;1;1;1;1;1;1" dur="1s"
+                            begin="0s;ct2o.end+2.5s;" />
+                    </circle>
+                    <circle id="ct2-glow" cx="331" cy="116" r="18" fill="url(#paint7_radial_167_141)" opacity="0">
+                        <animate id="ct2g" attributeType="CSS" attributeName="opacity" values="0;0;0;0;1;0.5;0.1;0"
+                            dur="2s" begin="0s;ct2g.end+1.5s;" />
+                    </circle>
+
+                    <circle id="ct1" cx="" cy="" r="6" fill="#774689" opacity="0">
+                        <animateMotion id="ct1a" dur="1s" begin="0;ct1a.end+4s" calcMode="spline" keyPoints="1;0"
+                            keyTimes="0;1" keySplines=".42,0,1,1"
+                            path="M233.5 196.5C240.167 212.333 254.761 244.641 259 251C265 260 269.5 265 279 265H338"
+                            fill="freeze" />
+                        <animate id="ct1o" attributeType="CSS" attributeName="opacity" values="0;1;1;1;1;1;1;1" dur="1s"
+                            begin="0s;ct1o.end+4s;" />
+                    </circle>
+                    <circle id="ct1-glow" cx="234" cy="195" r="18" fill="url(#paint8_radial_167_141)" opacity="0">
+                        <animate id="ct1g" attributeType="CSS" attributeName="opacity" values="0;0;0;0;1;0.5;0.1;0"
+                            dur="2s" begin="0s;ct1g.end+3s;" />
+                    </circle>
                 </g>
                 <defs>
                     <filter id="filter0_diii_167_141" x="163.564" y="0.310364" width="922.069" height="771.931"
@@ -201,8 +291,73 @@
                             values="0 0 0 0 0.0214734 0 0 0 0 0.0165278 0 0 0 0 0.0291667 0 0 0 0.74 0" />
                         <feBlend mode="normal" in2="effect3_innerShadow_167_141" result="effect4_innerShadow_167_141" />
                     </filter>
+                    <radialGradient id="paint0_radial_167_141" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(891 668) rotate(90) scale(18)">
+                        <stop offset="0.338542" stop-color="#FEBBFF" />
+                        <stop offset="0.458333" stop-color="#CB93E1" stop-opacity="0.87" />
+                        <stop offset="0.9999" stop-color="#E39BFF" stop-opacity="0" />
+                        <stop offset="1" stop-color="#E39BFF" stop-opacity="0" />
+                    </radialGradient>
+                    <radialGradient id="paint1_radial_167_141" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(759 727) rotate(90) scale(18)">
+                        <stop offset="0.338542" stop-color="#FEBBFF" />
+                        <stop offset="0.458333" stop-color="#CB93E1" stop-opacity="0.87" />
+                        <stop offset="0.9999" stop-color="#E39BFF" stop-opacity="0" />
+                        <stop offset="1" stop-color="#E39BFF" stop-opacity="0" />
+                    </radialGradient>
+                    <radialGradient id="paint2_radial_167_141" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(550 663) rotate(90) scale(18)">
+                        <stop offset="0.338542" stop-color="#FEBBFF" />
+                        <stop offset="0.458333" stop-color="#CB93E1" stop-opacity="0.87" />
+                        <stop offset="0.9999" stop-color="#E39BFF" stop-opacity="0" />
+                        <stop offset="1" stop-color="#E39BFF" stop-opacity="0" />
+                    </radialGradient>
+                    <radialGradient id="paint3_radial_167_141" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(333 632) rotate(90) scale(18)">
+                        <stop offset="0.338542" stop-color="#FEBBFF" />
+                        <stop offset="0.458333" stop-color="#CB93E1" stop-opacity="0.87" />
+                        <stop offset="0.9999" stop-color="#E39BFF" stop-opacity="0" />
+                        <stop offset="1" stop-color="#E39BFF" stop-opacity="0" />
+                    </radialGradient>
+                    <radialGradient id="paint4_radial_167_141" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(888 138) rotate(90) scale(18)">
+                        <stop offset="0.338542" stop-color="#FEBBFF" />
+                        <stop offset="0.458333" stop-color="#CB93E1" stop-opacity="0.87" />
+                        <stop offset="0.9999" stop-color="#E39BFF" stop-opacity="0" />
+                        <stop offset="1" stop-color="#E39BFF" stop-opacity="0" />
+                    </radialGradient>
+                    <radialGradient id="paint5_radial_167_141" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(672 99) rotate(90) scale(18)">
+                        <stop offset="0.338542" stop-color="#FEBBFF" />
+                        <stop offset="0.458333" stop-color="#CB93E1" stop-opacity="0.87" />
+                        <stop offset="0.9999" stop-color="#E39BFF" stop-opacity="0" />
+                        <stop offset="1" stop-color="#E39BFF" stop-opacity="0" />
+                    </radialGradient>
+                    <radialGradient id="paint6_radial_167_141" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(462 28) rotate(90) scale(18)">
+                        <stop offset="0.338542" stop-color="#FEBBFF" />
+                        <stop offset="0.458333" stop-color="#CB93E1" stop-opacity="0.87" />
+                        <stop offset="0.9999" stop-color="#E39BFF" stop-opacity="0" />
+                        <stop offset="1" stop-color="#E39BFF" stop-opacity="0" />
+                    </radialGradient>
+                    <radialGradient id="paint7_radial_167_141" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(331 116) rotate(90) scale(18)">
+                        <stop offset="0.338542" stop-color="#FEBBFF" />
+                        <stop offset="0.458333" stop-color="#CB93E1" stop-opacity="0.87" />
+                        <stop offset="0.9999" stop-color="#E39BFF" stop-opacity="0" />
+                        <stop offset="1" stop-color="#E39BFF" stop-opacity="0" />
+                    </radialGradient>
+                    <radialGradient id="paint8_radial_167_141" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(234 195) rotate(90) scale(18)">
+                        <stop offset="0.338542" stop-color="#FEBBFF" />
+                        <stop offset="0.458333" stop-color="#CB93E1" stop-opacity="0.87" />
+                        <stop offset="0.9999" stop-color="#E39BFF" stop-opacity="0" />
+                        <stop offset="1" stop-color="#E39BFF" stop-opacity="0" />
+                    </radialGradient>
                 </defs>
             </svg>
+
+
         </div>
     </header>
     <section id="intro" class="left">
@@ -490,10 +645,11 @@
         </div>
     </section>
     <footer>
-        <p>Made with love by <a href="https://twitter.com/shegadigital">Lucija</a> and <a
-                href="https://twitter.com/ladyofcode">Tabs</a> | All rights reserved. Yes, all of them.</p>
+        <p>Made with love by <a href="https://shegadigital.com/">Lucija</a> and <a
+                href="https://ladyofcode.com/">Tabs</a> | All rights reserved. Yes, all of them.</p>
     </footer>
-    <script src="./circles.js"></script>
+
+    <script src="./assets/circles.js"></script>
 
     <svg width="0" height="0" id="socials" display="none">
         <symbol width="16" height="16" viewBox="0 0 640 640" id="twitter">
